@@ -1,85 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | Reality Check!</title>
 
 <style>
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f6f6f6;
-    margin: 0;
+
+/* GENERAL */
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#f5f5f5;
 }
 
-.contact-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:white;
+    box-shadow:0 2px 5px rgba(0,0,0,0.08);
 }
 
-.contact-card {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    background: white;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+/* LOGO */
+.logo img{
+    height:55px;
+    border-radius:10px;
 }
 
-.profile-pic {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
+/* NAVIGATION */
+nav a{
+    margin-left:25px;
+    text-decoration:none;
+    color:#333;
+    font-size:16px;
 }
 
-.contact-text h2 {
-    margin: 0;
-    font-size: 28px;
+nav a:hover{
+    color:#000;
 }
 
-.contact-text p {
-    margin: 6px 0;
-    font-size: 16px;
+/* ACTIVE PAGE */
+nav a.active{
+    font-weight:bold;
+    border-bottom:2px solid black;
 }
 
-.contact-text a {
-    color: #0077cc;
-    text-decoration: none;
+/* CONTACT SECTION */
+
+.contact-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:70vh;
 }
 
-.contact-text a:hover {
-    text-decoration: underline;
+.contact-card{
+    display:flex;
+    align-items:center;
+    gap:35px;
+    background:white;
+    padding:45px;
+    border-radius:12px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.1);
 }
 
-/* Mobile */
-@media (max-width: 700px) {
-    .contact-card {
-        flex-direction: column;
-        text-align: center;
-    }
+.profile-pic{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
 }
+
+.contact-text h2{
+    margin:0;
+    font-size:28px;
+}
+
+.contact-text p{
+    margin:6px 0;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#222;
+    color:white;
+    margin-top:40px;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+.contact-card{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a{
+    margin:10px;
+}
+
+}
+
 </style>
+
 </head>
 
 <body>
 
-<div class="contact-container">
-    <div class="contact-card">
+<header>
 
-        <img src="images/nichole.jpg" alt="Nichole Losh" class="profile-pic">
-
-        <div class="contact-text">
-            <h2>Nichole Losh</h2>
-            <p>Digital Marketing Major</p>
-            <p>Email: <a href="mailto:niclosh@uat.edu">niclosh@uat.edu</a></p>
-        </div>
-
-    </div>
+<div class="logo">
+<img src="images/logo.png" alt="Reality Check Logo">
 </div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="boards.html">Boards</a>
+<a href="about.html">About</a>
+<a href="sip.html">SIP</a>
+<a href="contact.html" class="active">Contact</a>
+</nav>
+
+</header>
+
+<section class="contact-container">
+
+<div class="contact-card">
+
+<img src="images/nichole.png" alt="Nichole Losh" class="profile-pic">
+
+<div class="contact-text">
+
+<h2>Nichole Losh</h2>
+
+<p>Digital Marketing Major</p>
+<p>University of Advancing Technology</p>
+<p>Senior Innovation Project – Reality Check!</p>
+
+<p>Email: <a href="mailto:niclosh@uat.edu">niclosh@uat.edu</a></p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Nichole Losh | Reality Check! Senior Innovation Project</p>
+
+</footer>
 
 </body>
 </html>
