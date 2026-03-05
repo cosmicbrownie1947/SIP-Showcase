@@ -8,89 +8,119 @@
 <style>
 
 body{
-    margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:#ffffff;
-    color:#222;
-    line-height:1.6;
+margin:0;
+font-family: Arial, Helvetica, sans-serif;
+background:#F5F5F5;
+color:#333;
+line-height:1.6;
 }
 
 /* NAVBAR */
 
 .navbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 40px;
-    border-bottom:1px solid #ddd;
-}
-
-.logo{
-    display:flex;
-    align-items:center;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:white;
+border-bottom:3px solid #E65F5C;
 }
 
 .logo img{
-    height:45px;
-    border-radius:10px;
+height:45px;
+border-radius:12px;
 }
 
 .nav-links{
-    display:flex;
-    gap:25px;
+display:flex;
+gap:25px;
 }
 
 .nav-links a{
-    text-decoration:none;
-    color:#333;
-    font-weight:500;
+text-decoration:none;
+color:#333;
+font-weight:600;
 }
 
 .nav-links a:hover{
-    color:#000;
+color:#E65F5C;
 }
 
 .active{
-    border-bottom:2px solid black;
-    padding-bottom:4px;
+border-bottom:2px solid #E65F5C;
+padding-bottom:4px;
 }
+
 
 /* PAGE CONTENT */
 
 .container{
-    max-width:900px;
-    margin:auto;
-    padding:60px 20px;
+max-width:900px;
+margin:auto;
+padding:60px 20px;
 }
 
 h1{
-    font-size:36px;
-    margin-bottom:10px;
+font-size:36px;
+margin-bottom:10px;
+color:#E65F5C;
 }
 
 h2{
-    margin-top:40px;
-    font-size:24px;
+margin-top:40px;
+font-size:24px;
+color:#E65F5C;
 }
 
 p{
-    margin-top:10px;
+margin-top:10px;
 }
 
 ul{
-    margin-top:10px;
-    padding-left:20px;
+margin-top:10px;
+padding-left:20px;
+}
+
+/* PROFILE SECTION */
+
+.creator{
+display:flex;
+align-items:center;
+gap:30px;
+margin-bottom:40px;
+flex-wrap:wrap;
+}
+
+.creator img{
+width:140px;
+border-radius:20px;
+box-shadow:0px 4px 10px rgba(0,0,0,0.15);
+}
+
+.creator-info{
+font-size:16px;
 }
 
 /* FOOTER */
 
 footer{
-    margin-top:80px;
-    border-top:1px solid #ddd;
-    padding:25px;
-    text-align:center;
-    font-size:14px;
-    color:#555;
+margin-top:80px;
+background:#333;
+color:white;
+padding:25px;
+text-align:center;
+font-size:14px;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+.creator{
+flex-direction:column;
+text-align:center;
+}
+
 }
 
 </style>
@@ -104,7 +134,7 @@ footer{
 
 <div class="logo">
 <a href="index.html">
-<img src="logo.png" alt="Reality Check Logo">
+<img src="LOGO.jpeg" alt="Reality Check Logo">
 </a>
 </div>
 
@@ -124,6 +154,18 @@ footer{
 <div class="container">
 
 <h1>About Reality Check!</h1>
+
+<div class="creator">
+
+<img src="nichole.png" alt="Nichole Losh">
+
+<div class="creator-info">
+<strong>Nichole Losh</strong><br>
+Digital Marketing Major<br>
+Senior Innovation Project
+</div>
+
+</div>
 
 <h2>What is Reality Check!?</h2>
 <p>
