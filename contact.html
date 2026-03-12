@@ -1,27 +1,134 @@
-.contact-form{
-max-width:500px;
-display:flex;
-flex-direction:column;
-gap:12px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact | Portfolio by Nichole</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+</head>
 
-.contact-form input,
-.contact-form select,
-.contact-form textarea{
-padding:10px;
-border:1px solid #E5E7EB;
-border-radius:6px;
-}
+<body>
 
-.submit-btn{
-background:#9FB2A4;
-color:white;
-border:none;
-padding:12px;
-border-radius:6px;
-cursor:pointer;
-}
+<header>
+<nav class="navbar">
 
-.submit-btn:hover{
-background:#8CA596;
-}
+<div class="logo-small">
+<img src="LOGO1.png" alt="Portfolio by Nichole Logo">
+</div>
+
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="boards.html">Boards</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="sip.html">SIP</a></li>
+<li><a href="contact.html" class="active">Contact</a></li>
+</ul>
+
+</nav>
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-container">
+
+<div class="hero-text">
+<h1>Get in Touch</h1>
+
+<p>
+Have a project in mind or a question?  
+I’d love to connect and discuss ideas.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT SECTION -->
+
+<section class="features">
+
+<div class="feature-grid">
+
+<div class="feature-card">
+
+<h3>LinkedIn</h3>
+
+<p>
+Connect with me professionally or view my experience.
+</p>
+
+<a href="https://www.linkedin.com/in/nichole-losh-424346301/" target="_blank">
+Visit My LinkedIn
+</a>
+
+</div>
+
+<div class="feature-card">
+
+<h3>Email</h3>
+
+<p>
+For project inquiries or collaboration opportunities.
+</p>
+
+<p>
+nichole@email.com
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT FORM -->
+
+<section class="overview">
+
+<h2>Send a Message</h2>
+
+<form class="contact-form">
+
+<label>Name</label>
+<input type="text" placeholder="Your name">
+
+<label>Email</label>
+<input type="email" placeholder="Your email">
+
+<label>Project Type</label>
+
+<select>
+<option>Photography</option>
+<option>Videography</option>
+<option>Digital Marketing</option>
+<option>Branding</option>
+<option>Other</option>
+</select>
+
+<label>Message</label>
+
+<textarea rows="5" placeholder="Tell me about your project..."></textarea>
+
+<button type="submit" class="submit-btn">Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<p>
+Portfolio by Nichole<br>
+Nichole Losh — Digital Marketing
+</p>
+
+</footer>
+
+</body>
+</html>
