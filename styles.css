@@ -5,6 +5,14 @@ background:white;
 color:#2E2E2E;
 }
 
+section{
+border-bottom:1px solid #e5e5e5;
+}
+
+.logo-small img{
+height:45px;
+}
+
 /* NAVBAR */
 
 .navbar{
