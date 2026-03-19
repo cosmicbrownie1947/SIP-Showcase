@@ -128,11 +128,15 @@ cursor:pointer;
 .close-btn{
 margin-top:30px;
 padding:12px 20px;
-background:#cc2b2b;
+background:#6F5B8C;
 color:white;
 border:none;
 border-radius:6px;
 cursor:pointer;
+}
+.modal-box{
+display:flex;
+justify-content:center;
 }
 
 /* MODAL (FULL SCREEN POPUP) */
@@ -266,6 +270,45 @@ cursor:pointer;
 
 .submit-btn:hover{
 background:#8CA596;
+}
+
+/* MODAL LAYOUT (SIDE BY SIDE) */
+
+.modal-layout{
+display:flex;
+gap:40px;
+align-items:center;
+}
+
+/* LEFT IMAGE */
+
+.modal-image img{
+width:100%;
+max-width:350px;
+border-radius:10px;
+}
+
+/* RIGHT TEXT */
+
+.modal-text{
+text-align:left;
+}
+
+.modal-text h2{
+margin-top:0;
+}
+
+/* RESPONSIVE (stack on mobile) */
+
+@media (max-width:768px){
+.modal-layout{
+flex-direction:column;
+text-align:center;
+}
+
+.modal-text{
+text-align:center;
+}
 }
 
 /* FOOTER */
