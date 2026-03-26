@@ -288,6 +288,21 @@ flex-direction:column;
 gap:12px;
 }
 
+.video-modal{
+width:70%;
+}
+
+.video-modal iframe{
+width:100%;
+aspect-ratio:16/9;
+border-radius:10px;
+}
+
+/* shrink text ONLY for video modal */
+.video-modal + .modal-text{
+width:30%;
+}
+
 .contact-form input,
 .contact-form select,
 .contact-form textarea{
