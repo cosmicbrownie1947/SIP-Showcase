@@ -210,6 +210,28 @@ transform:translateY(-5px);
 transition:0.3s;
 }
 
+.hero-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:60px;
+}
+
+.hero-socials{
+display:flex;
+gap:20px;
+align-items:center;
+}
+
+.hero-socials img{
+width:40px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero-socials img:hover{
+transform:scale(1.15);
+}
 .read-btn{
 margin-top:15px;
 padding:12px 20px;
